@@ -12,7 +12,6 @@
     "postinstall": "bundle install"
   },
   "devDependencies": {
-    "@prettier/plugin-xml": "^3.4.1",
     "@shopify/prettier-plugin-liquid": "^1.6.2",
     "concurrently": "^9.1.0",
     "cross-env": "^7.0.3",
