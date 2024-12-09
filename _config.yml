@@ -28,3 +28,4 @@ exclude:
   - package-lock.json
   - tailwind.config.js
   - assets/scss/
+  - README.md

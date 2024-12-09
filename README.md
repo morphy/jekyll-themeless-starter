@@ -1,0 +1,1 @@
+A simple starter website for Jekyll development. Includes jekyll-minifier and Tailwindcss.
