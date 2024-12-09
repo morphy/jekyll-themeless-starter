@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}" class="size-full">
+  {% include head.liquid %}
+
+  <body class="flex size-full flex-col bg-black text-green-terminal">
+    {% include header.liquid %}
+
+    <main class="flex grow items-start p-10">
+      <div>
+        <div class="flex h-52 w-80 items-center justify-center border-2 border-solid border-green-terminal">
+          <div class="h-5/6 w-9/12 rounded-[48px] border-2 border-solid border-green-terminal"></div>
+        </div>
+
+        <div class="keyboard mt-2 flex h-40 w-80 flex-wrap content-center justify-center gap-2 border-2 border-solid border-green-terminal p-4">
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+        </div>
+      </div>
+
+      <div class="buttonboard ml-5 flex flex-col gap-5">
+        <button class="bg-green-terminal"></button>
+        <button></button>
+        <button class="bg-green-terminal"></button>
+        <button></button>
+        <button class="bg-green-terminal"></button>
+        <button></button>
+      </div>
+
+      <div class="sticky top-0 ml-20 flex min-w-0 grow border-2 border-solid border-green-terminal p-6">
+        <div class="mr-16 min-w-0 grow">
+          {{ content }}
+        </div>
+
+        <ul class="flex max-h-72 shrink-0 flex-col overflow-y-scroll border-2 border-solid border-green-terminal px-4 py-2 text-2xl">
+          <li class="mb-3">System log files:</li>
+          {% for post in site.posts %}
+            {% assign linkClasses = 'hover:underline' %}
+
+            {% if post.encrypted == true %}
+              {% assign linkClasses = linkClasses | append: ' text-red-terminal' %}
+            {% endif %}
+
+            <li>
+              <a class="{{ linkClasses }}" href="{{ post.url | relative_url }}">{{ post.date }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </main>
+
+    {%- include footer.liquid -%}
+  </body>
+</html>

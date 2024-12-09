@@ -1,0 +1,10 @@
+---
+permalink: /404
+title: 404
+layout: default
+order: 3
+---
+
+# 404
+
+Page not found :( The requested page could not be found.

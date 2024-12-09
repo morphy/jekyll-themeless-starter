@@ -1,0 +1,24 @@
+<header class="p-10 text-2xl">
+  <nav class="flex">
+    <ul>
+      {% assign sitePages = site.pages | sort: 'order' %}
+
+      {% for sitePage in sitePages %}
+        {% assign linkClasses = 'hover:underline' %}
+
+        {% if page.path == sitePage.path %}
+          {% assign linkClasses = linkClasses | append: ' underline' %}
+        {% endif %}
+
+        {% if sitePage.encrypted == true %}
+          {% assign linkClasses = linkClasses | append: ' text-red-terminal' %}
+        {% endif %}
+
+        <li>
+          <span>&gt; </span>
+          <a class="{{ linkClasses }}" href="{{ sitePage.url | relative_url }}">{{ sitePage.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
