@@ -7,4 +7,6 @@ Gemfile.lock
 **/*.webp
 **/*.avif
 
+assets/css/style.css
+
 .idea/
