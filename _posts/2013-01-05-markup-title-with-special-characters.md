@@ -9,13 +9,16 @@ tags:
   - title
 ---
 
-Putting special characters in the title should have no adverse effect on the layout or functionality.
+Putting special characters in the title should have no adverse effect on the
+layout or functionality.
 
-Special characters in the post title have been known to cause issues with JavaScript and XML when not properly encoded and escaped.
+Special characters in the post title have been known to cause issues with
+JavaScript and XML when not properly encoded and escaped.
 
 ## Latin Character Tests
 
-This is a test to see if the fonts used in this theme support basic Latin characters.
+This is a test to see if the fonts used in this theme support basic Latin
+characters.
 
 <table>
   <tr>
