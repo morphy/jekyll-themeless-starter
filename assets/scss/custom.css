@@ -1,0 +1,20 @@
+* {
+  font-family: "Sono", sans-serif;
+  font-weight: 500;
+}
+
+.keyboard {
+  button {
+    @apply block h-4 w-4 border-2 border-solid border-green-terminal;
+  }
+}
+
+.buttonboard {
+  button {
+    @apply block h-8 w-8 rounded-full border-2 border-solid border-green-terminal;
+  }
+}
+
+pre {
+  overflow-x: scroll;
+}
