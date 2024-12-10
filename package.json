@@ -2,7 +2,7 @@
   "name": "jekyll-themeless-website",
   "version": "1.0.0",
   "scripts": {
-    "dev": "concurrently --kill-others --names \"Jekyll,Tailwindcss\" \"cross-env JEKYLL_ENV=development bundle exec jekyll serve --livereload\" \"tailwind -i assets/scss/index.scss -o assets/css/style.css --watch\"",
+    "dev": "concurrently --kill-others --names \"Jekyll,Tailwindcss\" \"cross-env JEKYLL_ENV=development bundle exec jekyll serve --livereload\" \"tailwind -i assets/scss/index.scss -o _site/assets/css/style.css --watch\"",
     "clean": "shx rm -rf .jekyll-cache _site .jekyll-metadata",
     "clean:all": "shx rm -rf .jekyll-cache _site .jekyll-metadata node_modules",
     "format": "prettier --check --ignore-unknown */**",

@@ -6,6 +6,8 @@ description: >-
 baseurl: ""
 url: ""
 
+host: 0.0.0.0
+
 defaults:
   - scope:
       path: "_posts"
